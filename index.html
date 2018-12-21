@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Show me the Weather</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#f39921">
+    <meta name="description" content ="Weather Site">
+    
+    <!-- Add more meta data later 17-12-2018 -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <!-- Owfont Symbols-->
+    <link href="owfont-regular.css" rel="stylesheet" type="text/css">
+    <!--Manifest-->
+    <link href="manifest.json" rel="manifest">
+</head>
+  <body>
+      <!--
+     Nav
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Active link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled link</a>
+        </li>
+    </ul>
+   -->
+    <!--Main Start-->
+
+    <!-- City Search Form -->
+    <div class="container-fluid" id="city">
+        <hr class="my-4">
+        <h1>Show me the weather!</h1>
+        <form class="form-inline justify-content-center" id="cityForm">
+            <label class="sr-only" for="yourEmail"></label>
+            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                <div class="text"></div>
+                <label class="sr-only" for="yourCity">test</label>
+                <input type="text" class="form-control" id="yourCity" placeholder="Enter your location">
+            </div>
+            <button type="submit" class="btn btn-danger my-2 my-sm-0">Submit</button>
+        </form>
+        <hr class="my-4">
+    </div>
+    <!-- City Search Form Form -->
+      
+    <!-- Weather Info-->
+    <div class="container-fluid">        
+        <div class="card weather-card">
+            <div class="card-body pb-3">
+                <h5 class="card-title font-weight-bold">Today</h5>
+                <p class="card-text"><span id="cityName" style="font-size:50px; font-weight:600;"></span></p>
+                <div class="d-flex justify-content-between">
+                    <p class="display-3 degree"><span id="cityTemp"></span>°C </p>
+                    <i class="fa fa-sun-o fa-5x pt-3 amber-text"></i>
+                    <!-- <span style="font-size: 60px; color: Dodgerblue;">
+                                    <i class="fa fa-cloud-sun-rain    "></i></span> -->
+                </div>
+                <div class="d-flex justify-content-between mb-4">
+                    <p><img src="" id="weatherIcon" alt="weather icon"><span id="weatherCondition"></span></p>
+                    <p><i class="fas fa-wind"></i>&nbsp;<span id="windSpeed"></span>Km/h</p>
+                <div>
+                    
+            </div>
+        </div>
+    <div>
+
+    
+
+
+
+    <!-- Weather Info-->
+    <hr class="">    
+    <!-- Weather Forecast--> 
+    <div class="container-fluid">
+        <div class="card">
+      
+                <table class="table table-borderless table-sm mb-0">
+                    <tbody id="tbody">
+                    <tr>
+                        <td class="font-weight-normal align-middle"><span id="showDay1"></span></td>
+                        <td class="float-right font-weight-normal">
+                        <p class="mb-1"><span id="tempForecast7"></span>&deg;</p>
+                        </td>
+                        <td class="float-right mr-3">
+                        <!-- <i class="owf owf-200"></i> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-normal align-middle"><span id="showDay2"></span></td>
+                        <td class="float-right font-weight-normal">
+                        <p class="mb-1"><span id="tempForecast15"></span>&deg;</p>
+                        </td>
+                        <td class="float-right mr-3">
+                        <!-- <i class="fa fa-cloud fa-lg text-info"></i> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-normal align-middle"><span id="showDay3"></span></td>
+                        <td class="float-right font-weight-normal">
+                        <p class="mb-1"><span id="tempForecast23"></span>&deg;</p>
+                        </td>
+                        <td class="float-right mr-3">
+                        <i class="fa fa-sun-o fa-lg amber-text"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-normal align-middle"><span id="showDay4"></span></td>
+                        <td class="float-right font-weight-normal">
+                        <p class="mb-1"><span id="tempForecast31"></span>&deg;</p>
+                        </td>
+                        <td class="float-right mr-3">
+                        <i class="fa fa-sun-o fa-lg amber-text"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-normal align-middle"><span id="showDay5"></span></td>
+                        <td class="float-right font-weight-normal">
+                        <p class="mb-1"><span id="tempForecast39"></span>&deg;</p>
+                        </td>
+                        <td class="float-right mr-3">
+                        <!-- <i class="fa fa-cloud fa-lg text-info"></i> -->
+                        </td>
+                    </tr>
+                   </tbody>   
+                </table>
+            <div>
+        </div> 
+   </div>
+    <!-- Weather Forecast-->    
+ 
+    <!-- Main End-->  
+
+   
+<!-- Footer-->
+<div class="container">
+<footer class="navbar  navbar-light justify-content-center" style="margin-bottom:10px;">   
+<a class="navbar-brand" href="https://www.jules.koster.io"><i class="far fa-copyright" aria-hidden="true">Website by JFK Design</i></a>
+</footer>
+</div>  
+<!-- Footer-->
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="javascript.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
