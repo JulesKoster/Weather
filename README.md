@@ -1,7 +1,7 @@
 # Weather
 Progressive Web App showing the weather, assignment for my programming bootcamp.  
 
-Google Lightbox score:
+Google Lightbox Score:
 
 - Performance: 99
 - Progressive Web App: 100
